@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        script(type='text/javascript', src='static/bower_components/jquery/dist/jquery.js')
+        script(type='text/javascript', src='static/bower_components/angular/angular.js')
+        script(type='text/javascript', src='static/bower_components/angular-resource/angular-resource.js')
+        script(type='text/javascript', src='static/bower_components/angular-ui-bootstrap-bower/ui-bootstrap.js')
+        script(type='text/javascript', src='static/bower_components/angular-ui-router/release/angular-ui-router.js')
+        script(type='text/javascript', src='static/bower_components/requirejs/require.js', data-main='static/app/app')
+
+        title Example page
+    body
+        div(ui-view)
+
+        a(ui-sref='main') Main
+        a(ui-sref='cats') Something else
+
